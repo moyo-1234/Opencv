@@ -24,6 +24,10 @@ for i in range(30):
         rface = cv2.resize(facesize,(150,120))
         os.chdir(Moyo)
         cv2.imwrite("Moyo%s.png"%i,rface)
+        print(x,y,w,h)
+    cv2.imshow("Moyo",img)
+    cv2.waitKey(10)
+    
 
 
 print(totalimg)
