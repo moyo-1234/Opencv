@@ -27,10 +27,13 @@ for i in range(30):
         print(x,y,w,h)
     cv2.imshow("Moyo",img)
     cv2.waitKey(10)
+font = cv2.FONT_HERSHEY_SCRIPT_SIMPLEX
+text = ("Captured: "+str(totalimg)+" / 30")
+facecount = cv2.putText(img,text,(10,60),font,1,(0,0,0),2,cv2.LINE_AA)
+cv2.imshow("text",facecount)
+cv2.waitKey(0)
+print(text)
     
-
-
-print(totalimg)
 
 
     
